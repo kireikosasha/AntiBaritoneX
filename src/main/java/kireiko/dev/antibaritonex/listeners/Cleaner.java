@@ -17,6 +17,7 @@ public class Cleaner implements Listener {
         PatternCheck.clear(event.getPlayer());
     }
 
+
     @EventHandler
     public void hello(PlayerJoinEvent event) {
         Punish.add(event.getPlayer());
