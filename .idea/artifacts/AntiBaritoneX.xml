@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AntiBaritoneX">
+    <output-path>$PROJECT_DIR$/../ServerNew/plugins</output-path>
+    <root id="archive" name="AntiBaritoneX.jar">
+      <element id="module-output" name="AntiBaritoneX" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

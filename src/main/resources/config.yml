@@ -1,0 +1,13 @@
+#Config
+
+# %player% - player
+# %check% - check
+# %check-module% - check module
+# %count% - count
+# %vl% - vl
+
+# "abx.moder" - admin perm with alerts
+max-count: 3
+message: "&c&l[ABX]&e &e%player%&f use &4%check% &8%check-module% &f[%count%/3]"
+console: "%player% use %check% [%check-module%] [%count%/3]"
+punish: "kick %player% Baritone"

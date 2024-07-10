@@ -1,0 +1,30 @@
+
+}
+java:S1118":Add a private constructor to hide the implicit public one.(£Ê“­8°Šğ‰2J$a2951259-5684-4db0-9371-f1582dbcb367
+
+java:S18541"7Remove this useless assignment to local variable "zFf".(«†ğŸüÿÿÿÿ8µŠğ‰2J$fe0a3e1e-e92f-4965-a62e-cc071a61b960
+z
+java:S18540"7Remove this useless assignment to local variable "yFf".(¶¤Ğ¥8µŠğ‰2J$afd1e7ac-e367-42c6-89e0-1d37a77e15f6
+
+java:S1854/"7Remove this useless assignment to local variable "xFf".(Öç´áüÿÿÿÿ8µŠğ‰2J$000c5870-586b-470f-a814-4acd2d0dddd2
+Š
+java:S1854:"BRemove this useless assignment to local variable "oldDeltaRotYaw".(‘á¿›üÿÿÿÿ8µŠğ‰2J$52e8d772-77c8-44ce-9133-7f618b60c8cb
+Š
+java:S1854C"BRemove this useless assignment to local variable "oldDeltaRotYaw".(‘á¿›üÿÿÿÿ8µŠğ‰2J$e813d5ab-53c5-4b6b-961d-406be237103b
+r
+java:S1481 "*Remove this unused "flags" local variable.(ŒÔµùÿÿÿÿ8¶Šğ‰2J$18c34d47-b4b2-46ad-844e-e74127bb5f11
+v
+java:S1481""3Remove this unused "oldDeltaRotYaw" local variable.(Ûæ¢Ò8¶Šğ‰2J$5f6ffc16-5050-49c4-a6ad-4343375521cb
+h
+java:S1659)" Declare "dz" on a separate line.(îñ¢ùÿÿÿÿ8¶Šğ‰2J$e1e8613e-e33a-42d7-ac2c-643993070a09
+‡
+java:S1659,"?Declare "yF" and all following declarations on a separate line.(¹€›şÿÿÿÿ8¶Šğ‰2J$0c443c9c-5fe2-4f83-a26d-7d1fd4c4dbc9
+ƒ
+java:S16590"@Declare "yFf" and all following declarations on a separate line.(¶¤Ğ¥8¶Šğ‰2J$1a1c93f7-2100-4b3a-9774-a0a1883b468b
+p
+java:S1481/"(Remove this unused "xFf" local variable.(Öç´áüÿÿÿÿ8·Šğ‰2J$463f5055-bf94-4bfd-a3bb-09b333d3ea06
+k
+java:S14810"(Remove this unused "yFf" local variable.(¶¤Ğ¥8·Šğ‰2J$898d0067-c11c-4638-b57f-59c0dfc903d3
+p
+java:S14811"(Remove this unused "zFf" local variable.(«†ğŸüÿÿÿÿ8·Šğ‰2J$42f5538e-5672-462d-b74b-6f5f3a35f45e
+ƒ	java:S125="<This block of commented-out lines of code should be removed.(¡­ä£üÿÿÿÿ8¸Šğ‰2J$09857b8f-8515-4db1-9b00-022d42bd1129

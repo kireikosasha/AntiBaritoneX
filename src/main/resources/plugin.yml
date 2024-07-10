@@ -1,0 +1,3 @@
+name: AntiBaritoneX
+version: '${project.version}'
+main: kireiko.dev.antibaritonex.Main

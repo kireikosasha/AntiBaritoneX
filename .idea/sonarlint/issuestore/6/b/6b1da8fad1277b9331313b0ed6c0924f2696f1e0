@@ -1,0 +1,13 @@
+
+¥
+java:S14889"]Immediately return this expression instead of assigning it to the temporary variable "value".(¼áÏ°ıÿÿÿÿ8Ø­±ì‰2J$cdc50c77-195c-4dcd-b96c-dbcbbb1a0af6
+s
+java:S1144N"0Remove this unused private "getRotation" method.(™Àƒ¶8Ú­±ì‰2J$cdfb4599-9dda-422f-b9b8-d5231bdc1a2d
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(é»Ÿüÿÿÿÿ8Ú­±ì‰2J$23a5587b-314d-452f-83ff-3094be8cc893
+~	java:S125:"<This block of commented-out lines of code should be removed.(½¬ÏÁ8Ş­±ì‰2J$3ff4febb-f121-4c6a-a36c-957b4aaa7673
+k
+java:S1659Q"#Declare "pitch" on a separate line.(œĞÅÉÿÿÿÿÿ8ß­±ì‰2J$841e4e2f-c6ee-44f4-af36-40b36fe4a034
+o
+java:S1068
+",Remove this unused "BOOLEANS" private field.(Ü„ª8à­±ì‰2J$6d5e6f24-b0ff-4970-835c-c63867f8c8df

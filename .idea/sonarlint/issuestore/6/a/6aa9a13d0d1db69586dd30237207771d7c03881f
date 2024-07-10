@@ -1,0 +1,9 @@
+
+›
+java:S1104"SMake VERSION a static final constant or non-public and provide accessors if needed.(Ã²ï“ûÿÿÿÿ8Ó©Ùá‰2J$fcb949a0-323d-4759-985e-179ccd2b9580
+u
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8Ó©Ùá‰2J$040a3445-a677-41b7-a866-e9e98f5c132c
+š
+java:S3008"RRename this field "VERSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã²ï“ûÿÿÿÿ8Ô©Ùá‰2J$8c63b038-b160-43cb-b60a-f36582873831
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¯ê›ï8Ö©Ùá‰2J$e84fb113-bc0d-44e4-aefb-99340e21e179
