@@ -16,7 +16,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class PatternCheck {
     private static final Map<Player, List<PlayerMoveEvent>> buffer = new ConcurrentHashMap<>();
     private static final List<String> patterns = Arrays.asList(
-                    "532", "542"
+                    "532", "542", "7432"
+    );
+    private static final List<String> invalidValues = Arrays.asList(
+                    "9.0E-4", "6.0E-4", "7.0E-4"
     );
     public static void check(PlayerMoveEvent event) {
         Player player = event.getPlayer();
@@ -31,8 +34,11 @@ public class PatternCheck {
         List<PlayerMoveEvent> moves = buffer.get(player);
         RayLine oldRayLine = null;
         int flagsRot = 0;
+        int flagsInv = 0;
+        String invSens = "";
         double oldDeltaYaw = 0;
         double oldDeltaRotYaw = 0;
+        double oldDeltaRotPitch = 0;
         StringBuilder pattern = new StringBuilder();
         for (PlayerMoveEvent event : moves) {
             Location to = event.getTo();
@@ -55,27 +61,32 @@ public class PatternCheck {
             double deltaYaw = RayUtils.calculateRayLines(rayLine, oldRayLine);
             double deltaRotYaw = Math.abs(RayUtils.wrapYaw(to.getYaw()) - RayUtils.wrapYaw(from.getYaw()));
             double deltaRotPitch = Math.abs(to.getPitch() - from.getPitch());
-            if (deltaRotYaw > 0 && deltaRotPitch > 0 && deltaRotYaw < 0.005 && deltaRotPitch < 0.005) {
-                flagsRot++;
-            }
             if (oldDeltaYaw == 0) {
                 oldDeltaYaw = deltaYaw;
                 oldDeltaRotYaw = deltaRotYaw;
+                oldDeltaRotPitch = deltaRotPitch;
             }
             double fucked = Math.round(Math.abs(deltaYaw - oldDeltaYaw));
+            double fucked2 = RayUtils.scaleVal(deltaRotYaw, 4);
+            String invalidCheck = String.valueOf(fucked2);
             pattern.append((int) fucked);
+            if (invalidValues.contains(invalidCheck) && deltaRotPitch < 0.000000001D) {
+                invSens = invalidCheck;
+                flagsInv++;
+            }
 
             oldRayLine = rayLine;
             oldDeltaYaw = deltaYaw;
             oldDeltaRotYaw = deltaRotYaw;
+            oldDeltaRotPitch = deltaRotPitch;
         }
-        if (flagsRot > 0) {
-            Punish.use(player, flagsRot * 150, "Baritone", "Rotations");
+        if (flagsInv > 0) {
+            Punish.use(player, 110, "Baritone", "Predicted " + invSens);
         }
         String finalPattern = pattern.toString();
         for (String s : patterns) {
             if (finalPattern.contains(s)) {
-                Punish.use(player, 65, "Baritone", "Analysis");
+                Punish.use(player, 65, "Baritone", "Spike on 25x Table #" + s);
             }
         }
     }
