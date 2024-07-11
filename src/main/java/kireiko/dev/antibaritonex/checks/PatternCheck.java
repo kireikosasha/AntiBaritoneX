@@ -35,6 +35,8 @@ public class PatternCheck {
         RayLine oldRayLine = null;
         int flagsRot = 0;
         int flagsInv = 0;
+        int cYaw = 0;
+        int cPitch = 0;
         String invSens = "";
         double oldDeltaYaw = 0;
         double oldDeltaRotYaw = 0;
@@ -74,11 +76,15 @@ public class PatternCheck {
                 invSens = invalidCheck;
                 flagsInv++;
             }
-
+            cYaw += (deltaRotYaw > 0.000000001D) ? 1 : 0;
+            cPitch += (deltaRotPitch > 0.000000001D) ? 1 : 0;
             oldRayLine = rayLine;
             oldDeltaYaw = deltaYaw;
             oldDeltaRotYaw = deltaRotYaw;
             oldDeltaRotPitch = deltaRotPitch;
+        }
+        if (cYaw == 25 && cPitch == 0) {
+            Punish.use(player, 65, "Baritone", "Invalid delta");
         }
         if (flagsInv > 0) {
             Punish.use(player, 110, "Baritone", "Predicted " + invSens);
